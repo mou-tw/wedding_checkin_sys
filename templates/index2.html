@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <title> wedding </title>
+
+
+</head>
+
+<body>
+    <form method=”get” action='forword'> 
+        請輸入文字：
+        <input type="text" name="name_search" placeholder="輸入姓名" type='text'>
+        <input type="submit" id = 'check button' value="查詢">
+    </form>
+    <br>
+
+    {% for name in names %}
+
+        <button style="border-width: 3px ; width: 150px; height: 30px ; padding: 5px; text-align: center; background-color: rgb(41, 105, 176, 0.7);border-radius: 4px;">
+        <span style="color: rgb(255, 255, 255);">{{name}}</span></button>
+        <br>
+
+    {% endfor %}
+    
+    
+    <br>
+    <form method=”get” action='index'> 
+        <input type="submit" id = 'back_index' value="回首頁">
+    </form>
+
+
+</body>
+
+
+
+</html>
